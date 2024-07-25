@@ -1,0 +1,114 @@
+
+body {
+    margin: 0;
+    line-height: normal;
+    padding-top: 60px;
+}
+.item1 { grid-area: header; }
+.item3 { grid-area: main; }
+.item4 { 
+    grid-area: footer;
+    height: 50px;
+}
+.item2 {
+    grid-area: menu;
+    position: fixed;
+    height: 450px;
+    width: 300px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+    text-align: left;
+    font-size: 16px;
+    color: #000;
+    font-family: Inter;
+    margin-bottom: 50px;
+}
+.menu-child a {
+    color: #000;
+    text-decoration: none
+    
+}
+.user li {
+    font-weight: 600;
+}
+ .user .avta {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background-color: #48ca74;
+}
+.user {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    top: 4.6%;
+    right: 28.52%;
+    bottom: 86.21%;
+    left: 14.45%;
+    gap: 10px;
+}
+
+.list {
+    display: flex;           
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    top: 18.38%;
+    gap: 20px;              
+  }
+  
+.list a {
+    text-decoration: none;  
+    display: block;
+    box-sizing: border-box;
+    color: black;           
+    padding: 10px;
+    padding-left: 15%;
+  }
+  
+.list a:hover {
+    background-color: lightgray;          
+  }
+.list .a2 {
+    display: flex;
+    font-weight: 600;
+    margin: 0;
+    align-items: center;
+    padding-left: 20px;
+
+}
+.list img{
+    margin-right: 10px; 
+    vertical-align: middle;
+    height: 20px;
+}
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        'header header header header header header'
+        'menu   main   main   main   main   main'
+        'footer footer footer footer footer footer';
+
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: auto 1fr;
+    height: 100vh;
+    /* display: grid;
+    grid:
+    'header header header header header header'
+    'menu . main main main . '; */
+}
+/* #check:checked ~ .menu-child {
+    left: -190px;
+  }
+
+  #check:checked ~ .menu-child span {
+    display: none;
+  }
+
+  #check:checked ~ .menu-child .a2 {
+    font-size: 20px;
+    margin-left: 170px;
+    width: 80px;
+  } */
+
+

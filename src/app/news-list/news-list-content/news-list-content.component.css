@@ -1,0 +1,38 @@
+*{
+    font-size: 16px;
+    font-family: Inter;
+    color: black;
+}
+body {
+    margin: 0;
+    line-height: normal; 
+    display: flex;
+}
+img{
+    width: 348px;
+    height: 203.89px;
+    flex-shrink: 0;
+    margin: 10px;
+    border-radius: 2%;
+}
+.card{
+    position: relative;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    background-color: #fff;
+    font-family: Inter;
+    margin: 20px 30px;
+    height: auto;
+}
+span {
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #E3AA49;
+    color: #fff;
+    padding: 1%;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    justify-content: center;
+}
