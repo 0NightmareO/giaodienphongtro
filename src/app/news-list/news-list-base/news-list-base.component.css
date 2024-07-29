@@ -5,22 +5,28 @@ body {
     padding-top: 60px;
 }
 .item1 { grid-area: header; }
-.item3 { grid-area: main; }
+.item3 { 
+    grid-area: main;
+    background-color: rgba(243, 243, 243, 1);
+    height: vh;
+ }
 .item4 { 
     grid-area: footer;
-    height: 50px;
+    width: 100%;
 }
 .item2 {
     grid-area: menu;
-    position: fixed;
+    position: sticky;
     height: 450px;
     width: 300px;
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 5px 10px  rgba(0, 0, 0, 0.20);
     text-align: left;
+    top: 52px;
     font-size: 16px;
     color: #000;
     font-family: Inter;
-    margin-bottom: 50px;
+    z-index: 99;
+
 }
 .menu-child a {
     color: #000;
@@ -97,18 +103,3 @@ body {
     'header header header header header header'
     'menu . main main main . '; */
 }
-/* #check:checked ~ .menu-child {
-    left: -190px;
-  }
-
-  #check:checked ~ .menu-child span {
-    display: none;
-  }
-
-  #check:checked ~ .menu-child .a2 {
-    font-size: 20px;
-    margin-left: 170px;
-    width: 80px;
-  } */
-
-

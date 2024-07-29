@@ -11,9 +11,16 @@ import { FindRoommateBaseComponent } from './find_roommate/find-roommate-base/fi
 import { FindFormComponent } from './find_roommate/find-form/find-form.component';
 import { NewsListBaseComponent } from './news-list/news-list-base/news-list-base.component';
 import { NewsListContentComponent } from './news-list/news-list-content/news-list-content.component';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { FormsModule } from '@angular/forms';
 
 const routes: Routes = [
   { path: 'find-roommate', component: FindRoommateBaseComponent }
+
 ];
 
 @NgModule({
@@ -32,9 +39,16 @@ const routes: Routes = [
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    BrowserAnimationsModule,
+    MatButtonModule,
+    MatIconModule,
+    MatSidenavModule,
+    FormsModule
   ],
-  providers: [],
+  providers: [
+    provideAnimationsAsync()
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
