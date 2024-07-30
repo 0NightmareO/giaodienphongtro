@@ -2,6 +2,151 @@
     --primary-color: #55B3D9;
     --second-color: rgb(160, 217, 244);
 }
+
+i{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.header{
+    width: 100%;
+    top: 0;
+    position: fixed;
+    z-index: 999;
+}
+
+.header-contain{
+    top: 0;
+    margin-top: -25px;
+    height: 150px;
+    background: #fff;
+}
+
+.navbar{
+    top: 0;
+    width: 100%;
+    display: flex;
+}
+
+.icon{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.icon .item i{
+    position: absolute;
+}
+
+.icon .item>span{
+    position: relative;
+    top: -12px;
+    left: 12px;
+    background: var(--primary-color);
+    border-radius: 50%;
+    text-align: center;
+    width: 25px;
+    height: 25px;
+}
+
+.icon .name{
+    display: flex;
+    align-items: center;
+}
+
+.icon .name>p{
+    margin-top: 12px;
+}
+
+.icon .name a{
+    text-align: center;
+}
+
+.icon .display{
+    display: none;
+    position: absolute;
+    width: 300px;
+    top: 70px;
+    margin-left: -120px;
+    z-index: 2;
+    background: #FFF;
+    border: 1px solid rgb(233, 232, 232);
+    border-radius: 20px;
+    height: 350px;
+}
+
+.icon .name:hover .display{
+    display: block;
+}
+
+.icon .name .register{
+    background: linear-gradient(180deg, #74C6DB 4.35%, #3E6A75 85.96%);
+    margin-top: -20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.icon .name .register h3{
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.icon .name .register-inf{
+    display: flex;
+    margin-left: 0px;
+    margin-top: -40px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.icon .name .register-inf img{
+    width: 130px;
+    height: 130px;
+    margin-left: -12px;
+    margin-top: 55px;
+}
+
+.icon .name .register-inf .inf p{
+    width: 140px;
+    color: #fff;
+    margin-top: 40px;
+}
+.icon .name .inf-group{
+    display: flex;
+    align-items: center;
+    height: 30px;
+    width: 250px;
+    margin-left: 20px;
+    margin-top: 10px;
+    background: #fff;
+    border: none;
+    transition: all ease 0.3s;
+    border-bottom: 1px solid rgb(233, 232, 232);
+    padding-bottom: 10px;
+}
+.icon .name .inf-group p{
+    margin-top: 13px;
+    margin-left: 5px;
+}
+
+.icon .name .inf-group:hover{
+    cursor: pointer;
+    color: var(--primary-color);
+}
+
+.icon .name .logout{
+    display: flex;
+    gap: 10px;
+    height: 40px;
+    margin-top: 10px;
+    margin-left: 120px;
+}/* :root{
+    --primary-color: #55B3D9;
+    --second-color: rgb(160, 217, 244);
+}
 * :not(.navbar-brand) {
     font-family: Inter;
     font-size: 16px;
@@ -207,4 +352,4 @@
 .navbar .button .upload:last-child:hover{
     background-color: var(--second-color);
     color: grey;
-}
+} */

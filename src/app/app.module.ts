@@ -17,6 +17,8 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { FormsModule } from '@angular/forms';
+import { EditPostComponent } from './edit-post/edit-post/edit-post.component';
+import { EditPostBaseComponent } from './edit-post/edit-post-base/edit-post-base.component';
 
 const routes: Routes = [
   { path: 'find-roommate', component: FindRoommateBaseComponent }
@@ -34,6 +36,8 @@ const routes: Routes = [
     FindFormComponent,
     NewsListBaseComponent,
     NewsListContentComponent,
+    EditPostComponent,
+    EditPostBaseComponent,
   
   ],
   imports: [

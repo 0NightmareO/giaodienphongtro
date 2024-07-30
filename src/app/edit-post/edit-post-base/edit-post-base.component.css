@@ -7,7 +7,6 @@ body {
 .item1 { grid-area: header; }
 .item3 { 
     grid-area: main;
-    background-color: rgba(243, 243, 243, 1);
     height: vh;
  }
 .item4 { 

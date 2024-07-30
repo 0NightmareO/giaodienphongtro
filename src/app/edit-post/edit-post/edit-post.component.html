@@ -1,0 +1,121 @@
+<form class="row g-3 form1">
+    <p>Thông tin cơ bản</p>
+    <div class="btn-group" role="group" aria-label="Basic example">
+      <a routerLink="/find-roommate" class="btn btn2">Tìm người ở ghép</a>
+      <a href="#" class="btn btn1">Cho thuê</a>
+    </div>
+    <div class="col-md-12">
+      <label for="inputType" class="form-label">Loại bất động sản</label>
+      <select id="inputType" class="form-select">
+        <option selected>Phòng trọ</option>
+        <option>Nhà nguyên căn</option>
+      </select>
+    </div>
+    <div class="col-md-6">
+      <label for="inputProvince" class="form-label">Tỉnh/Thành</label>
+      <select id="inputProvince" class="form-select">
+        <option selected>...</option>
+        <option>...</option>
+      </select>
+    </div>
+    <div class="col-md-6">
+      <label for="inputDistrict" class="form-label">Quận/Huyện</label>
+      <select id="inputDistrict" class="form-select">
+        <option selected>...</option>
+        <option>...</option>
+      </select>
+    </div>
+    <div class="col-md-6">
+      <label for="inputDirection" class="form-label">Phường/Xã</label>
+      <select id="inputDirection" class="form-select">
+        <option selected>...</option>
+        <option>...</option>
+      </select>
+    </div>
+    <div class="col-md-6">
+      <label for="inputStresst" class="form-label">ĐườngPhố</label>
+      <select id="inputStresst" class="form-select">
+        <option selected>...</option>
+        <option>...</option>
+      </select>
+    </div>
+    <div class="col-md-2">
+      <label for="inputApartment_number" class="form-label">Số nhà</label>
+      <input type="number" class="form-control" id="inputApartment_number" min="0">
+    </div>
+    <div class="col-md-10">
+      <label for="inputAddress" class="form-label">Địa chỉ chính xác</label>
+      <input type="text" class="form-control" id="inputAddress">
+    </div>
+</form>
+<form class="row g-3 form2">
+    <p>Thông tin bài viết</p>
+    <div class="mb-3">
+      <label for="exampleFormControlInput1" class="form-label">Tiêu đề</label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+      <p>Tối thiểu 30 ký tự, tối đa 99 ký tự</p>
+    </div>
+    
+    <div class="mb-3">
+      <label for="exampleFormControlTextarea1" class="form-label">Mô tả</label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      <p>Tối thiểu 30 ký tự, tối đa 3000 ký tự</p>
+    </div>
+</form>
+<form class="row g-3 form3">
+    <p>Thông tin bất động sản</p>
+    
+    <div class="mb-3">
+      <label for="basic-url" class="form-label">Diện tích</label>
+      <div class="input-group">
+      <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3 basic-addon4">
+      <span class="input-group-text" id="basic-addon3">m <sup>2</sup></span>
+      </div>
+    </div>
+    <div class="mb-3">
+      <label for="basic-url" class="form-label">Giá tiền</label>
+      <div class="input-group">
+      <input type="number" class="form-control" id="basic-url" aria-describedby="basic-addon3 basic-addon4">
+      <span class="input-group-text" id="basic-addon3">VND</span>
+      </div>
+    </div>
+    <!-- <div class="btn-group " role="group" aria-label="Toolbar with button groups">
+      <span id="room">Số phòng ngủ</span>
+      <div class="btn-group1 me-2" role="group" aria-label="First group">
+        <button type="button" class="btn btn4" (click)="increment()">+</button>
+        <span class="btn btn5" id="counter">{{ counterValue }}</span>
+        <button type="button" class="btn btn4" (click)="decrement()">-</button>
+      </div>
+    </div> -->
+</form>
+<form class="row g-3 form4">
+    <p>Hình ảnh & video</p>
+      <li>Đăng tối thiểu 6 ảnh</li>
+      <li>Hãy dùng ảnh thật, không trùng, không chèn SĐT</li>
+      <li>Mỗi ảnh kích thước tối thiểu 100x100 px, tối đa 15 MB</li>
+    <div class="post_img">
+      <img src="public/upimg.png" >
+      <p>Bấm để thêm ảnh</p>
+    </div>
+    <div class="post_video">
+      <img src="public/upload.png" >
+      <p>Bấm để thêm video</p>
+    </div>
+</form>
+<form class="row g-3 form5">
+    <p>Thông tin liên hệ</p>
+    <div class="col-md-6">
+      <label for="inputContact" class="form-label">Tên liên hệ</label>
+      <input class="form-control" id="inputContact" readonly>
+      <span> <i class="bi bi-exclamation-triangle icon1"></i> Chỉ có thể chỉnh sửa trong hồ sơ cá nhân</span>
+    </div>
+    <div class="col-md-6">
+      <label for="inputPhone" class="form-label">Số điện thoại</label>
+      <input class="form-control" id="inputPhone" readonly>
+    </div>
+</form>
+<div class="btn_submit">
+<button>Đăng tin<i class="bi bi-arrow-right-short icon2"></i> </button>
+
+</div>
+

@@ -6,5 +6,16 @@ import { Component } from '@angular/core';
   styleUrl: './news-list-base.component.css'
 })
 export class NewsListBaseComponent {
+  // constructor() {}
 
+  // ngOnInit() {
+  //   const toggleButton = document.getElementById('toggle-menu');
+  //   const sidebar = document.getElementById('sidebar');
+
+  //   if (toggleButton && sidebar) {
+  //     toggleButton.addEventListener('click', () => {
+  //       sidebar.classList.toggle('show');
+  //     });
+  //   }
+  // }
 }
