@@ -36,9 +36,6 @@ p {
     font-size: 30px;
     margin-bottom: 0;
 }
-#inputAddress {
-    margin-bottom: 20px;
-}
 .btn-group .btn1 {
     background-color: rgba(45, 95, 115, 1);
     color: #fff;
@@ -102,13 +99,11 @@ p {
     margin: 20px auto;
     
 }
-.post_img img,
-.post_video img{
+.post_img img{
     margin-top: 20px;
     width: 20.5%;
 }
-.post_img p,
-.post_video p{
+.post_img p{
     font-size: 14px;
     font-weight: 100;
     color: rgba(135, 135, 135, 1);

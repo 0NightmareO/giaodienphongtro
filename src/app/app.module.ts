@@ -19,6 +19,10 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { FormsModule } from '@angular/forms';
 import { EditPostComponent } from './edit-post/edit-post/edit-post.component';
 import { EditPostBaseComponent } from './edit-post/edit-post-base/edit-post-base.component';
+import { EditProfileBaseComponent } from './edit-profile/edit-profile-base/edit-profile-base.component';
+import { EditProfileContentComponent } from './edit-profile/edit-profile-content/edit-profile-content.component';
+import { ChangePasswordBaseComponent } from './change-password/change-password-base/change-password-base.component';
+import { ChangePasswordContentComponent } from './change-password/change-password-content/change-password-content.component';
 
 const routes: Routes = [
   { path: 'find-roommate', component: FindRoommateBaseComponent }
@@ -38,7 +42,10 @@ const routes: Routes = [
     NewsListContentComponent,
     EditPostComponent,
     EditPostBaseComponent,
-  
+    EditProfileBaseComponent,
+    EditProfileContentComponent,
+    ChangePasswordBaseComponent,
+    ChangePasswordContentComponent,
   ],
   imports: [
     BrowserModule,
