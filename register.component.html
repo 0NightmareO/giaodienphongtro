@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In/Up Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="logo container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="public/logo.png"/>
+                <strong>CoDat</strong>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="link collapse navbar-collapse" id="navbar">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link border-nav" href="#!">Trang chủ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#!" class="nav-link">Cho thuê phòng trọ</a>
+                    <li class="nav-item">
+                        <a href="#!" class="nav-link">Tìm người ở ghép</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#!" class="nav-link">Tin tức</a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <button class="login signin">Đăng nhập</button>
+                    <!-- <button class="register" [ngClass]="{'signup': !isSign, 'nosign': isSign}" id="signUp">Đăng ký</button> -->
+                    <button class="upload">Đăng tin</button>
+                </div>
+        </div>
+        </div>
+    </nav>
+        <img class="pic1" src="public/background-register1.png"/>
+        <img class="pic2" src="public/background-register2.png"/>
+        <img class="user" src="public/user-register.png"/>
+    
+    <div class="content">
+        <!-- <h2>Sign in/up Form</h2> -->
+        <div class="container" id="container">
+            <div class="form-container sign-up-container">
+                <form action="#">
+                    <h1>Tạo Tài Khoản</h1>
+                    <div class="social-container">
+                        <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                        <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <span>hoặc sử dụng email của bạn để đăng ký</span>
+                        <input type="text" placeholder="Họ tên" required/>
+                        <input type="email" placeholder="Email" required/>
+                        <input type="tel" placeholder="Số điện thoại" required/>
+                        <input type="text" placeholder="Địa chỉ" required/>
+                        <input type="password" placeholder="Mật khẩu" required/>
+                        <button type="button">ĐĂNG KÝ</button>
+                </form>
+            </div>
+            <div class="form-container sign-in-container">
+                <form action="#">
+                    <h1>Đăng Nhập</h1>
+                    <div class="social-container">
+                        <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                        <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <span>hoặc sử dụng email của bạn để đăng ký</span>
+                    <div class="item">
+                        <label for="email" [ngClass]="{ 'empty': email==='',
+                        'isemail': isEmail}">Email</label>
+                        <input id="email" type="email" (focus)="onFocusEmail()" [(ngModel)]="email" />
+                    </div>
+                    <div class="item">
+                        <label for="password" [ngClass]="{ 'ispassword': isPassword && password==''}">Password</label>
+                        <input id="password" type="password" (focus)="onFocusPassword()" [(ngModel)]="password"/>
+                    </div>
+                    <a href="#!">Quên mật khẩu?</a>
+                    <button type="button">ĐĂNG NHẬP</button>
+                </form>
+            </div>
+            <div class="overlay-container">
+                <div class="overlay">
+                    <div class="overlay-panel overlay-left">
+                        <h1>Chào mừng trở lại</h1>
+                        <p>Để duy trì kết nối bạn cần đăng nhập</p>
+                        <button class="ghost" id="signIn" >ĐĂNG NHẬP</button>
+                    </div>
+                    <div class="overlay-panel overlay-right">
+                        <h1>Chào bạn!</h1>
+                        <p>Bạn có thể bắt đầu cuộc hành trình của mình với chúng tôi</p>
+                        <button class="ghost" id="signUp" >ĐĂNG KÝ</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
