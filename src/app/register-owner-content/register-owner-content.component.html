@@ -1,0 +1,80 @@
+
+  <form class="row g-3 form">
+    <h2>Đăng kí làm người cho thuê</h2>
+    <div class="classify">
+      <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link " href="#">Chỉnh sửa hồ sơ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="#">Thay đổi mật khẩu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Đăng kí làm người cho thuê</a>
+        </li>
+      </ul>
+    </div>
+    <hr>
+    <div class="note">
+        <h2>Để đăng ký làm người cho thuê, bạn cần thực hiện theo các bước sau:</h2>
+        <p>1. Cung cấp các thông tin cá nhân, đảm bảo chính xác và rõ ràng về bạn</p>
+        <p>2. Sau khi hoàn tất, ấn nút “Đăng ký”</p>
+        <p>3. Nhận kết quả xét duyệt từ Codat.com.vn sau 2 - 3 ngày làm việc</p>
+        <br>
+        <h2>Lưu ý: sau khi trở thành người cho thuê:</h2>
+        <p>- Tên và ảnh đại diện dùng để đăng ký sẽ được áp dụng lên tất cả các tin đăng của bạn và hiển thị trên khắp website CoDat.com.vn</p>
+        <p>- Các thay đổi liên quan tới thông tin liên hệ sẽ cần được CoDat.com.vn xét duyệt lại</p>
+    </div>
+  
+        <div class="information">
+            <p class="form-label">Ảnh đại diện</p>
+            <h3>Ảnh nên chụp nửa người phía trên, nhìn rõ mặt và thể hiện sự chuyên nghiệp của bạn</h3>
+            <div class="post_img">
+                <i class="bi bi-person-square img1"></i>
+                <p>Tải ảnh lên</p>
+            </div>
+            <div class="row">
+            <div class="col-12 col-md-6">
+              <label for="inputName" class="form-label">Họ và Tên</label>
+              <input type="text" class="form-control" id="inputName" >
+                </div>
+            <div class="col-12 col-md-6">
+              <label for="inputName" class="form-label">Số điện thoại</label>
+              <input type="text" class="form-control" id="inputName" readonly >
+                </div>
+            </div>
+            <p class="form-label">Ảnh chụp CCCD và chân dung cầm thẻ CCCD</p>
+            <small>
+                <h3>1. Ảnh mặt trước CCCD không bị mất góc, đủ chi tiết và đủ ánh sáng</h3>
+                <h3>2. Ảnh mặt sau CCCD không bị mất góc, đủ chi tiết và đủ ánh sáng</h3>
+                <h3>3. Ảnh chân dung nhìn rõ mặt và cầm CCCD bên cạnh</h3>
+              </small>
+              
+            <div class="post_img2">
+                <img src="public/upimg.png" alt="">
+                <p>Tải ảnh lên</p>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="termsCheckbox">
+                <label class="form-check-label" for="termsCheckbox">
+                    Tôi đồng ý với các <a href="">Điều khoản sử dụng, </a> <a href="">Chính sách bảo mật, </a> <a href="">Quy chế và Chính sách </a> của CoDat.com.vn. Tôi cam kết những nội dung nêu trên là đúng sự thật, nếu có xảy ra tranh chấp, khiếu nại tôi xin chịu hoàn toàn trách nhiệm.
+                </label>
+              </div>
+              <div class="btn_submit">
+  <button class="btn btn-primary" (click)="showToast()">Đăng kí</button>
+</div>
+<div class="toast-container position-fixed top-0 start-50 translate-middle-x " aria-label="Toast notifications">
+  <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-header">
+      <strong class="me-auto">Thông báo</strong>
+      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+    <div class="toast-body">
+      Gửi thành công!
+    </div>
+  </div>
+</div>
+  
+</div>
+
+

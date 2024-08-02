@@ -1,0 +1,178 @@
+
+*{
+    font-size: 16px;
+    
+    color: black;
+    font-weight: 500;
+    /* outline: none !important; 
+    box-shadow: none !important; */
+    
+}
+body {
+    margin: 0;
+    line-height: normal;
+  
+}
+span {
+  font-size: 16px;
+  font-weight: 400;
+}
+.form-label::after {
+    content: ' *';
+    color: red;
+  }
+.form{
+    position: relative;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    background-color: #fff;
+    
+    width: 75%;
+    display: flex;
+    padding: 20px;
+    margin: 20px auto; /* cacnhs căn giữa chuẩn*/
+    height: auto;
+}
+sup{
+    font-size: 12px;
+}
+p {
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.post_img p, 
+.post_img2 p {
+    margin-bottom: 20px;
+    margin-top: 0;
+    font-size: 14px;
+    font-weight: 100;
+    color: rgba(135, 135, 135, 1);
+    
+
+}
+.classify .nav {
+    display: flex;
+    margin-top: 10px;
+    gap: 20px;
+  }
+  
+  .classify .nav-link {
+    cursor: pointer;
+  }
+  
+  .classify .nav-link.active {
+    border-bottom: 3px solid rgba(85, 179, 217, 1);
+    
+  }
+  .classify .nav-link.active:hover {
+    color: black;
+  }
+  .classify .nav-link:hover {
+    border-bottom: 3px solid rgba(85, 179, 217, 1);
+    color: rgba(85, 179, 217, 1);
+    
+    
+  }
+  hr {
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  .note {
+    margin: 0;
+    padding: 20px;
+    background-color: rgba(217, 217, 217, 1);
+    border-radius: 10px;
+  }
+  .note p {
+    margin: 10px;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .note h2{
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+  }
+  .img1 {
+    
+    font-size: 100px;
+    color: rgba(135, 135, 135, 1);
+
+  }
+  .post_img {
+    position: relative;
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+  }
+  .post_img2{
+    position: relative;
+    display: flex;
+    width: 90%;
+    border: 2px solid rgba(217, 217, 217, 1) ;
+    border-radius: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    
+}
+  .post_img2 img{
+    margin-top: 20px;
+    width: 20.5%;
+}
+h3{
+    font-size: 14px;
+    color: rgba(135, 135, 135, 1);
+    margin-left: 10px;
+    margin-bottom: 0;
+ }
+ .form-check {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+  }
+  
+  .form-check-input {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
+  
+  .form-check-label {
+    font-size: 16px;
+  }
+.form-check-label a {
+    text-decoration: none;
+    color:rgba(117, 198, 220, 1) ;
+}
+.btn_submit {
+    display: flex;
+    justify-content: right;
+    width: 100%;
+    margin: 20px 0px auto;
+    height: 40px;
+    font-weight: 600;
+    
+
+    }
+.btn_submit button{
+    color: #fff;
+    background-color: rgba(85, 179, 217, 1);
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    
+
+}
+button:focus,
+input:focus,
+a:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+

@@ -1,61 +1,51 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, Routes } from '@angular/router';
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { MenuComponent } from './post_for_rent/menu/menu.component';
-import { NavbarComponent } from './post_for_rent/navbar/navbar.component';
-import { PostFormComponent } from './post_for_rent/post-form/post-form.component';
-import { FooterComponent } from './post_for_rent/footer/footer.component';
-import { FindRoommateBaseComponent } from './find_roommate/find-roommate-base/find-roommate-base.component';
-import { FindFormComponent } from './find_roommate/find-form/find-form.component';
-import { NewsListBaseComponent } from './news-list/news-list-base/news-list-base.component';
-import { NewsListContentComponent } from './news-list/news-list-content/news-list-content.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { FormsModule } from '@angular/forms';
-import { EditPostComponent } from './edit-post/edit-post/edit-post.component';
-import { EditPostBaseComponent } from './edit-post/edit-post-base/edit-post-base.component';
-import { EditProfileBaseComponent } from './edit-profile/edit-profile-base/edit-profile-base.component';
-import { EditProfileContentComponent } from './edit-profile/edit-profile-content/edit-profile-content.component';
-import { ChangePasswordBaseComponent } from './change-password/change-password-base/change-password-base.component';
-import { ChangePasswordContentComponent } from './change-password/change-password-content/change-password-content.component';
+import { HTTP_INTERCEPTORS, HttpClient, HttpClientModule } from '@angular/common/http';
 
-const routes: Routes = [
-  { path: 'find-roommate', component: FindRoommateBaseComponent }
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { PostFormComponent } from './post-form/post-form.component';
+import { FooterComponent } from './footer/footer.component';
+import { NewsListContentComponent } from './news-list-content/news-list-content.component';
+import { EditPostComponent } from './edit-post/edit-post.component';
+import { EditProfileContentComponent } from './edit-profile-content/edit-profile-content.component';
+import { ChangePasswordContentComponent } from './change-password-content/change-password-content.component';
+import { RegisterOwnerContentComponent } from './register-owner-content/register-owner-content.component';
 
-];
+
+
 
 @NgModule({
   declarations: [
-    AppComponent,
-    MenuComponent,
     NavbarComponent,
     PostFormComponent,
     FooterComponent,
-    FindRoommateBaseComponent,
-    FindFormComponent,
-    NewsListBaseComponent,
     NewsListContentComponent,
+    AppComponent,
     EditPostComponent,
-    EditPostBaseComponent,
-    EditProfileBaseComponent,
     EditProfileContentComponent,
-    ChangePasswordBaseComponent,
     ChangePasswordContentComponent,
+    RegisterOwnerContentComponent
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(routes),
     BrowserAnimationsModule,
     MatButtonModule,
     MatIconModule,
     MatSidenavModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
+
   ],
   providers: [
     provideAnimationsAsync()

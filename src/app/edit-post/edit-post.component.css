@@ -1,0 +1,148 @@
+*{
+    font-size: 16px;
+    
+    color: black;
+}
+button:focus,
+input:focus,
+a:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+body {
+    margin: 0;
+    margin-bottom: 10px;
+    line-height: normal;
+}
+form{
+    display: flex;
+    padding: 20px 10px 20px ;
+    
+}
+.form1,
+.form2,
+.form3,
+.form4,
+.form5{
+    position: relative;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    background-color: #fff;
+    
+    width: 75%;
+    margin: 20px auto; /* cacnhs căn giữa chuẩn*/
+    height: auto;
+}
+sup{
+    font-size: 12px;
+}
+p {
+    
+    font-weight: 600;
+    font-size: 30px;
+    margin-bottom: 0;
+}
+.btn-group .btn1 {
+    background-color: rgba(45, 95, 115, 1);
+    color: #fff;
+    font-weight: 600;
+}
+.btn-group .btn2 {
+    border : 2px solid rgba(45, 95, 115, 1);
+    font-weight: 600;
+}
+.form-label::after {
+    content: ' *';
+    color: red;
+  }
+.form-control {
+    font-size: 14px;
+}
+.mb-3 p{
+    font-size: 14px;
+    font-weight: 100;
+    text-align: left;
+    padding-top: 10px;
+}
+.btn-group1{
+    padding-left: 300px;
+
+}
+.btn4{
+    background-color: rgba(45, 95, 115, 1);
+    color: #fff;
+    font-weight: 600;
+}
+.btn5{
+    border : 2px solid rgba(45, 95, 115, 1);
+    
+    
+}
+#inputCost,
+#inputApartment_number,
+#inputAddress
+#inputType {
+    height: 37px;
+}
+.form4 li{
+    font-size: 14px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.post_img,
+.post_video{
+    position: relative;
+    display: flex;
+    width: 90%;
+    border: 2px solid rgba(217, 217, 217, 1) ;
+    border-radius: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    
+}
+.post_img img,
+.post_video img{
+    margin-top: 20px;
+    width: 20.5%;
+}
+.post_img p,
+.post_video p{
+    font-size: 14px;
+    font-weight: 100;
+    color: rgba(135, 135, 135, 1);
+    margin-bottom: 20px;
+
+}
+.form5 span, .form5 .icon1{
+    font-size: 14px;
+    font-weight: 100;
+    color: rgba(135, 135, 135, 1) ;
+}
+.btn_submit {
+    display: flex;
+    justify-content: right;
+    width: 75%;
+    margin: 20px auto;
+    height: 2%;
+    font-weight: 600;
+
+    }
+.btn_submit button, 
+.icon2{
+    color: #fff;
+    background-color: rgba(85, 179, 217, 1);
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+
+}
+#inputContact,
+#inputPhone,
+#inputAddress {
+    pointer-events: none; /* Vô hiệu hóa mọi tương tác với trường đầu vào */
+    background-color: #e9ecef; /* Đặt màu nền để thể hiện trường không thể chỉnh sửa */
+    cursor: default; /* Đổi con trỏ chuột thành dạng mặc định */
+}

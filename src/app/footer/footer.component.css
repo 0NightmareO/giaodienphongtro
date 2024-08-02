@@ -1,0 +1,60 @@
+.footer{
+    display: flex;
+    padding-left: 75px;
+    background-color: #D9D9D9;
+    padding-top: 30px;
+}
+
+.footer .inf .logo{
+    display: flex;
+    align-items: center;
+}
+
+.footer .inf .logo p{
+    color: #000;
+    font-family: Lexend;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+}
+
+.footer .inf>p{
+    color: #000;
+    
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; 
+}
+
+.footer .inf .link{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer .ins-reg{
+    display: flex;
+    margin-left: 100px;
+    padding-top: 30px;
+    gap: 50px;
+    color: #000;
+    
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; 
+}
+
+.footer .ins-reg a{
+    display: block;
+    color: #000;
+    
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    text-decoration: none;
+    line-height: 30px;
+    margin-top: 5px;
+}
