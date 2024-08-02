@@ -19,6 +19,7 @@ import { EditPostComponent } from './edit-post/edit-post.component';
 import { EditProfileContentComponent } from './edit-profile-content/edit-profile-content.component';
 import { ChangePasswordContentComponent } from './change-password-content/change-password-content.component';
 import { RegisterOwnerContentComponent } from './register-owner-content/register-owner-content.component';
+import { FindRoommateComponent } from './find-roommate/find-roommate.component';
 
 
 
@@ -33,7 +34,8 @@ import { RegisterOwnerContentComponent } from './register-owner-content/register
     EditPostComponent,
     EditProfileContentComponent,
     ChangePasswordContentComponent,
-    RegisterOwnerContentComponent
+    RegisterOwnerContentComponent,
+    FindRoommateComponent
     
   ],
   imports: [

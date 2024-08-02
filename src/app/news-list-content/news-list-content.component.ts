@@ -34,7 +34,8 @@ export class NewsListContentComponent {
   }
 
   editItem(cardId: number) {
-    // Thêm logic chỉnh sửa tại đây nếu cần
+    // Điều hướng đến trang chỉnh sửa với id của bài viết
+    this.router.navigate(['/edit-post', cardId]); // Thay '/edit-post' bằng đường dẫn của trang muốn chuyển đến
   }
 
   repostItem(cardId: number) {

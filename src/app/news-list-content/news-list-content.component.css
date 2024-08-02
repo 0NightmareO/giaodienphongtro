@@ -149,6 +149,12 @@ sup{
   color: rgba(85, 179, 217, 1);
   
 }
+.no-posts {
+  text-align: center;
+  color: #888;
+  font-size: 18px;
+  margin-top: 20px;
+}
 
 
 
