@@ -3,13 +3,13 @@
     <div class="classify">
       <ul class="nav text-center justify-content-center">
         <li class="nav-item">
-          <a class="nav-link active" href="#">Chỉnh sửa hồ sơ</a>
+          <a class="nav-link active" routerLink="/edit-profile">Chỉnh sửa hồ sơ</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Thay đổi mật khẩu</a>
+          <a class="nav-link" routerLink="/change-password">Thay đổi mật khẩu</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Đăng kí làm người cho thuê</a>
+          <a class="nav-link" routerLink="/register-owner">Đăng kí làm người cho thuê</a>
         </li>
       </ul>
       </div>
@@ -29,21 +29,21 @@
     <span>Thông tin liên hệ</span>
     <div class="col-12 col-md-6">
         <label for="inputPhone_number" class="form-label">Số điện thoại</label>
-        <input type="number" class="form-control" id="inputPhone_number" readonly>
-        <a class="note" href="#">Đổi số điện thoại</a>
+        <input type="tel" class="form-control" id="inputPhone_number" >
+        <!-- <a class="note" href="#">Đổi số điện thoại</a> -->
     </div>
       
     <div class="col-12 col-md-6">
         <label for="inputFb" class="form-label">Facebook</label>
-        <input type="text" class="form-control" id="inputFb" >
+        <input type="url" class="form-control" id="inputFb" >
     </div>
     <div class="col-12 col-md-6">
         <label for="inputZalo" class="form-label">Số zalo</label>
-        <input type="text" class="form-control" id="inputZalo" >
+        <input type="tel" class="form-control" id="inputZalo" >
     </div>
     <div class="col-12 col-md-6">
         <label for="inputEmail" class="form-label">Email</label>
-        <input type="text" class="form-control" id="inputEmail" >
+        <input type="email" class="form-control" id="inputEmail" >
     </div>
     <div class="btn_submit">
         <button>Lưu thay đổi </button>

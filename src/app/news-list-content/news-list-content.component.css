@@ -30,6 +30,8 @@ a:focus {
 }
 img{
     padding: 10px;    
+    min-width: 50px;
+    min-height: 250px;
 }
 sup{
     font-size: 12px;

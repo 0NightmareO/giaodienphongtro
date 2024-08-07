@@ -1,11 +1,14 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
-
 interface Card {
+size: any;
+  price: number;
+  address: string;
+  title: string;
   id: number;
-  code: string;
-  date: string;
+  code: number;
+  date:string;
   status: string;
   isHidden: boolean;
 }
@@ -19,7 +22,16 @@ interface Card {
 
 export class NewsListContentComponent {
   cards: Card[] = [
-    { id: 1, code: '743562', date: '7/5/2024', status: 'Đang hiển thị', isHidden: false }
+    { id: 1,
+      code: 743562, 
+      date: '7/5/2024', 
+      status: 'Đang hiển thị', 
+      isHidden: false,
+      title: 'Cho thuê căn hộ vinhome 4 phòng ngủ vip nhất',
+      price: 10,
+      size: '40m²',
+      address: 'Quận 1',
+    }
     
   ];
 

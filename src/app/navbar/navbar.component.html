@@ -1,7 +1,7 @@
 <div class="header">
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="logo container-fluid">
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" routerLink="/home" (click)="onLogoClick()">
               <img src="public/logo.png"/>
               <strong>CoDat</strong>
           </a>
@@ -23,7 +23,7 @@
                       <a class="nav-link" href="#">Tin tức</a>
                   </li>
               </ul>
-              <div class="d-flex">
+              <!-- <div class="d-flex">
                   <div class="me-3 icon">
                       <div class="item">
                           <i class="bi bi-heart"></i>
@@ -69,7 +69,7 @@
                   <div class="account d-flex align-items-center">
                       <button class="btn btn-primary">Đăng tin</button>
                   </div>
-              </div>
+              </div> -->
       </div>
       </div>
   </nav>

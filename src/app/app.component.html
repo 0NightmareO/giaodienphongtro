@@ -7,11 +7,18 @@
  <!-- <app-change-password-base></app-change-password-base> -->
  <!-- <app-register-owner-base></app-register-owner-base> -->
  <!-- <app-register ngSkipHydration></app-register> -->
+ <!-- <app-homepage></app-homepage> -->
+
+
+ <!-- <app-login></app-login> -->
+
+
 
  <div class="grid-container">
     <div class="item1">
-      <app-navbar></app-navbar>
+      <app-navbar (logoClick)="toggleMenu()"></app-navbar>
     </div>
+<nav *ngIf="showMenu">
     <div class="item2">
       <div class="menu-child">
         <div class="user">
@@ -29,12 +36,14 @@
         </div>
       </div>
     </div>
-    <!-- Nội dung sẽ được hiển thị ở đây -->
-    <div class="item3">
+</nav>
+     <div class="item3">
       <router-outlet></router-outlet>
     </div>
-    <div class="item4">
+    <div class="item4">  
       <!-- <app-footer></app-footer> -->
-    </div>
+     </div>
   </div>
   
+
+   

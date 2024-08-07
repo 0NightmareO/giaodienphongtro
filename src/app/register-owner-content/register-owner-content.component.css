@@ -36,10 +36,17 @@ span {
 sup{
     font-size: 12px;
 }
-p {
+h2 {
     margin-top: 20px;
     font-size: 16px;
     font-weight: 500;
+    margin-bottom: 0;
+}
+p {
+
+  font-weight: 600;
+  font-size: 30px;
+  margin-bottom: 0;
 }
 .post_img p, 
 .post_img2 p {
@@ -78,6 +85,7 @@ p {
     margin: 0;
     margin-bottom: 20px;
   }
+  
   .note {
     margin: 0;
     padding: 20px;

@@ -6,6 +6,8 @@ import { RegisterOwnerContentComponent } from './register-owner-content/register
 import { ChangePasswordContentComponent } from './change-password-content/change-password-content.component';
 import { NewsListContentComponent } from './news-list-content/news-list-content.component';
 import { PostFormComponent } from './post-form/post-form.component';
+import { HomepageComponent } from './homepage/homepage.component';
+
 
 const routes: Routes = [
   { path: 'post-for-roommate', component: FindRoommateComponent },
@@ -13,7 +15,9 @@ const routes: Routes = [
   { path: 'edit-profile', component: EditProfileContentComponent },
   { path: 'change-password', component: ChangePasswordContentComponent },
   { path: 'register-owner', component: RegisterOwnerContentComponent },
-  { path: 'post-for-rent', component: PostFormComponent }
+  { path: 'post-for-rent', component: PostFormComponent },
+  { path: 'home', component: HomepageComponent },
+
 
 ];
 

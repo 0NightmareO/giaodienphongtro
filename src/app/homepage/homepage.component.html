@@ -1,0 +1,81 @@
+<app-navbar></app-navbar>
+<div class="image-container">
+    <img src="/public/bg.jpg" class="img-fluid full-screen-image" alt="...">
+    <div class="overlay"></div>
+    <div class="centered-content">
+      <h1>“Mạng xã hội” phòng trọ lớn nhất Việt Nam</h1>
+      <h3>Tìm trọ nhanh chóng, đơn giản, an toàn, không phát sinh chi phí</h3>
+      <button type="button" class="btn btn-secondary btn1">Tham gia ngay</button>
+    </div>
+  </div>
+<div class="u-room">
+    <h2> Phòng trọ dành cho bạn</h2>
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col" *ngFor="let card of cards">
+      <div class="card h-100 w-100">
+        <img [src]="card.imageUrl" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{ card.title }}</h5>
+          <div class="row g-2">
+            <h6 class="col-5 col-md-7 card-text text_custom">{{ card.price }}</h6>
+            <h6 class="col-3 col-md-3 card-text text_custom">{{ card.size }}</h6>
+          </div>
+          <p class="card-text"><i class="bi bi-geo-alt"></i> {{card.address}}</p>
+          <div class="row g-2 ">
+          <small class="text-body-secondary col-5 col-md-10">{{ card.lastUpdated }}</small>
+          <i class="bi bi-heart col-5 col-md-2 d-flex justify-content-end "></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="text-center mt-4">
+    <button type="button" class="btn btn-secondary btn2">Xem thêm <i class="bi bi-chevron-right icon4"></i></button>
+  </div>
+</div>
+<div class="hot-local">
+  <h2>Các địa điểm nóng</h2>
+  <div class="row gr-img">
+    <div class="col-4 col-md-4 position-relative">
+      <img src="/public/bg.jpg" class="img-fluid rounded-image" alt="...">
+      <div class="overlay">
+        <p class="text">Đà Nẵng</p>
+        <h2>12.453 tin đăng</h2>
+      </div>
+    </div>
+    <div class="col-4 col-md-4 position-relative">
+      <img src="/public/bg.jpg" class="img-fluid rounded-image" alt="...">
+      <div class="overlay ">
+        <p class="text">HCM</p>
+        <h2>12.453 tin đăng</h2>
+      </div>
+    </div>
+    <div class="col-4 col-md-4 position-relative">
+      <img src="/public/bg.jpg" class="img-fluid rounded-image" alt="...">
+      <div class="overlay">
+        <p class="text">Hà Nội</p>
+        <h2>12.453 tin đăng</h2>
+      </div>
+    </div>
+  </div> 
+</div>
+<div class="row  product ">
+    <h2>Chúng tôi cung cấp các dịch vụ</h2>
+    <div class="container">
+      <div class="row g-4">
+        <div class="card1 col-12 col-md-4 text-center">
+          <img class="custom img-fluid" src="/public/rent.png" alt="">
+          <p>Cập nhật thường xuyên và đầy đủ các loại hình như: thuê phòng trọ, nhà nguyên căn, căn hộ mini giúp bạn nhanh chóng tìm được bất động sản ưng ý.</p>
+        </div>
+        <div class="card1 col-12 col-md-4 text-center">
+          <img class="custom img-fluid" src="/public/match.png" alt="">
+          <p>Tìm người thuê chung nhanh hơn bằng cách đăng tải bài viết trên chính trang web. Giúp bạn tiết kiệm giá nhà thuê, mang lại sự tiện lợi khi ở chung.</p>
+        </div>
+        <div class="card1 col-12 col-md-4 text-center">
+          <img class="custom img-fluid" src="/public/appraisal.png" alt="">
+          <p>Tìm kiếm nhanh chóng, chính xác với giá thành hợp lý và tiết kiệm nhất. Kết nối trực tiếp với chủ nhà hoặc môi giới thông qua Zalo, hoặc cuộc gọi trực tiếp.</p>
+        </div>
+      </div>
+    </div>
+    
+</div>
